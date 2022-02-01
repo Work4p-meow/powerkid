@@ -1,7 +1,7 @@
 import Navbar from './component/Navbar';
 import Footer from './component/Footer';
-function Course() {
-    //หลักสูตร
+function Cost() {
+    //ราคา
 }
 
-export default Course
+export default Cost
