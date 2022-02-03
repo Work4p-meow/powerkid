@@ -1,6 +1,10 @@
-import Navbar from './component/Navbar';
-import Footer from './component/Footer';
+
 function Cost() {
+    return(
+        <>
+        cost
+        </>
+    )
     //ราคา
 }
 
