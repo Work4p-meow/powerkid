@@ -7,11 +7,16 @@ function App() {
   return (
 
     <div className="App">
-      <Navbar>
-        <header className="App-header">
-          eiei
-        </header>
-      </Navbar>
+      <div>
+        <Navbar>
+
+        </Navbar>
+      </div>
+
+
+      <p className='text-center text-gray-400'> ... </p>
+      <Footer></Footer>
+
     </div>
   );
 }
