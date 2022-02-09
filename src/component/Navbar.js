@@ -1,20 +1,21 @@
 import styled from "styled-components"
 import { FaBars } from 'react-icons/fa';
 import { NavLink as Link } from 'react-router-dom';
+import { logDOM } from "@testing-library/react";
 
 export const Nav = styled.nav`
-  background: #000;
+  position: relative;
   height: 80px;
   display: flex;
   justify-content: space-between;
   padding: 0.5rem calc((100vw - 1000px) / 2);
   z-index: 10;
   /* Third Nav */
-  /* justify-content: flex-start; */
+  /* justify-content: flex-end; */
 `;
 
 const NavLink = styled(Link)`
-  color: #fff;
+  color: #2B39AF;
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -22,7 +23,7 @@ const NavLink = styled(Link)`
   height: 100%;
   cursor: pointer;
   &.active {
-    color: #15cdfc;
+    color: #000;
   }
 `;
 
@@ -41,8 +42,10 @@ const Bars = styled(FaBars)`
 `;
 
 const NavMenu = styled.div`
+  font-family: 'Prompt', sans-serif;
   display: flex;
-  align-items: center;
+  width: 120%;
+  /* align-items: center; */
   margin-right: -24px;
   /* Second Nav */
   /* margin-right: 24px; */
@@ -68,7 +71,7 @@ const NavBtn = styled.nav`
 
 const NavBtnLink = styled(Link)`
   border-radius: 4px;
-  background: #256ce1;
+  background: #E85137;
   padding: 10px 22px;
   color: #fff;
   outline: none;
@@ -85,34 +88,38 @@ const NavBtnLink = styled(Link)`
   }
 `;
 
+const Logo = styled.img`
+  width: 25%;
+`;
+
 const Navbar = () => {
     return (
         <div className='my-5'>
             <Nav>
-                <NavLink to="/">
-                    <h1>logo</h1>
-                </NavLink>
+            <NavLink to="/">
+                    <Logo src="/assets/Logo Powerkid.png" />
+              </NavLink>
                 <Bars />
                 <NavMenu>
-                    <NavLink to="/cost" activeStyle>
-                        Cost
+                    <NavLink to="/Home" activeStyle>
+                        หน้าหลัก
                     </NavLink>
                     <NavLink to="/course" activeStyle>
-                        Course
+                        หลักสูตรของเรา
+                    </NavLink>
+                    <NavLink to="/cost" activeStyle>
+                        ราคา
                     </NavLink>
                     <NavLink to="/enroll" activeStyle>
-                        Enroll
+                        สมัครเรียน
                     </NavLink>
-                    <NavLink to="/trial" activeStyle>
-                        Trial
-                    </NavLink>
+                  <NavBtn>
+                      <NavBtnLink to="/trial">ทดลองเรียนฟรี</NavBtnLink>
+                  </NavBtn>
                 </NavMenu>
-                <NavBtn>
-                    <NavBtnLink to="/">Test</NavBtnLink>
-                </NavBtn>
             </Nav>
             <div>
-              
+
             </div>
         </div>
     )

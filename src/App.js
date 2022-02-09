@@ -11,15 +11,15 @@ import Trial from './page/Trial';
 function App() {
   return (
     <Router>
-      <Navbar />
-      <Routes>
-        <Route path='/' exact element={<Home />} />
-        <Route path='/cost' element={<Cost />} />
-        <Route path='/course' element={<Course />} />
-        <Route path='/enroll' element={<Enroll />} />
-        <Route path='/trial' element={<Trial />} />
-      </Routes>
-    </Router>
+        <Navbar />
+        <Routes>
+          <Route path='/' exact element={<Home />} />
+          <Route path='/cost' element={<Cost />} />
+          <Route path='/course' element={<Course />} />
+          <Route path='/enroll' element={<Enroll />} />
+          <Route path='/trial' element={<Trial />} />
+        </Routes>
+      </Router>
   );
 }
 
