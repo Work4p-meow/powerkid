@@ -15,7 +15,7 @@ export const Nav = styled.nav`
 `;
 
 const NavLink = styled(Link)`
-  color: #2B39AF;
+  color: #fff;
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -23,7 +23,7 @@ const NavLink = styled(Link)`
   height: 100%;
   cursor: pointer;
   &.active {
-    color: #000;
+    color: #2B39AF;
   }
 `;
 
@@ -92,7 +92,7 @@ const Logo = styled.img`
   width: 25%;
 `;
 
-const Navbar = () => {
+const NavbarHome = () => {
     return (
         <div className='my-5'>
             <Nav>
@@ -125,4 +125,4 @@ const Navbar = () => {
     )
 }
 
-export default Navbar
+export default NavbarHome

@@ -1,7 +1,9 @@
+import Navbar from "../component/Navbar"
 
 function Cost() {
     return(
         <>
+            <Navbar />
         cost
         </>
     )
