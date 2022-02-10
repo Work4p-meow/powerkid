@@ -1,10 +1,79 @@
 import Navbar from "../component/Navbar"
+import styled from "styled-components"
+import { FaBars } from 'react-icons/fa';
+import { NavLink as Link } from 'react-router-dom';
+import { logDOM } from "@testing-library/react";
+
+const Text = styled.div`
+  font-family: 'Prompt', sans-serif;
+  display: flex;
+  width: 120%;
+  /* align-items: center; */
+  margin-right: -24px;
+  /* Second Nav */
+  /* margin-right: 24px; */
+  /* Third Nav */
+  /* width: 100vw;
+  white-space: nowrap; */
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+  `;
+const Btn = styled.nav`
+  display: flex;
+  align-items: center;
+  margin-right: 24px;
+  /* Third Nav */
+  /* justify-content: flex-end;
+  width: 100vw; */
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+`;
+const BtnLink = styled(Link)`
+  border-radius: 4px;
+  background: #2B39AF;
+  padding: 10px 22px;
+  color: #fff;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  /* Second Nav */
+  margin-left: 24px;
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    background: #fff;
+    color: #010606;
+  }
+`;
+const Image = styled.img`
+  width: 15%;
+`;
+
 
 function Cost() {
-    return(
+    return (
         <>
             <Navbar />
-        cost
+            <div >
+                <Text>
+                    <div >
+
+                        เริ่มต้นเรียนทักษะแห่งอนาคต
+                        <div>กับ PowerKid ตั้งแต่วันนี้</div>
+                    </div>
+
+
+                    <Btn><BtnLink to='/cost'>เรียนสด (ออนไลน์)</BtnLink></Btn>
+                    <Btn><BtnLink to='/cost'>เรียนจากคลิปวีดีโอ</BtnLink></Btn>
+                    <div></div>
+                    <Image src='assets/medium-shot-kid-taking-notes.jpg' />
+                    <Image src='assets/little-girls-doing-online-school-together-home.jpg' />
+
+                </Text>
+            </div>
         </>
     )
     //ราคา
