@@ -1,5 +1,4 @@
 import Navbar from "../component/Navbar"
-<<<<<<< HEAD
 import styled from "styled-components"
 import { FaBars } from 'react-icons/fa';
 import { NavLink as Link } from 'react-router-dom';
@@ -54,14 +53,10 @@ const Image = styled.img`
 `;
 
 
-=======
-import Footer from "../component/Footer"
->>>>>>> 2e60e478b5c1cc4d744eb314aaff6f31671efe88
 function Cost() {
     return (
         <>
             <Navbar />
-<<<<<<< HEAD
             <div >
                 <Text>
                     <div >
@@ -79,10 +74,6 @@ function Cost() {
 
                 </Text>
             </div>
-=======
-        cost
-            <Footer />
->>>>>>> 2e60e478b5c1cc4d744eb314aaff6f31671efe88
         </>
     )
     //ราคา
