@@ -7,6 +7,7 @@ import Cost from './page/Cost';
 import Course from './page/Course';
 import Enroll from './page/Enroll';
 import Trial from './page/Trial';
+import Footer from './component/Footer';
 
 function App() {
   return (
