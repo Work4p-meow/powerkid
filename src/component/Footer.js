@@ -13,8 +13,8 @@ const Container = styled.div`
 const Row = styled.div`
 	/* display: flex; */
     display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
-  grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
     @media (max-width: 1000px) {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   }
@@ -35,7 +35,7 @@ const FooterCol = styled.div`
 	font-size: 18px;
 	color: #ffffff;
 	text-transform: capitalize;
-	margin-bottom: 35px;
+	/* margin-bottom: 35px; */
 	font-weight: 1000;
    }
     h4::before{
@@ -67,7 +67,7 @@ const FooterCol = styled.div`
     }
 
     a{
-	display: inline-block;
+
 	text-align: center;
 	line-height: 40px;
 	color: #ffffff;
@@ -97,7 +97,6 @@ const SocialLinks = styled.a`
 	display: inline-block;
 	height: 40px;
 	width: 40px;
-	background-color: rgba(255,255,255,0.2);
 	margin:0 10px 10px 0;
 	text-align: center;
 	line-height: 40px;
@@ -119,7 +118,9 @@ const Title = styled.p`
     font-family: 'Bai Jamjuree', sans-serif;
     color: #FFF;
 `
-
+const Icon = styled.img`
+    width: 100%;
+`
 const Footer = () => {
     return (
         <>
@@ -141,10 +142,10 @@ const Footer = () => {
                                 {/* <li><a href="#"><p>เทคโนโลยี</p></a></li>
                                 <li><a href="#"><p>การเงินการลงทุน</p></a></li>
                                 <li><a href="#"><p>การเป็นผู้ประกอบการ</p></a></li> */}
-                                <Col><a href="#">เทคโนโลยี</a></Col>
-                                <Col><a href="#">การเงินการลงทุน</a></Col>
-                                <Col><a href="#">การเป็นผู้ประกอบการ</a></Col>
-                                <h4><a href="#">ทดลองเรียนฟรี</a></h4>
+                                <Col><a href="/">เทคโนโลยี</a></Col>
+                                <Col><a href="/">การเงินการลงทุน</a></Col>
+                                <Col><a href="/">การเป็นผู้ประกอบการ</a></Col>
+                                <h4><a href="/trial">ทดลองเรียนฟรี</a></h4>
                         </FooterCol>
                         <FooterCol>
                             <h4>บทความ</h4>
@@ -153,12 +154,23 @@ const Footer = () => {
                             <ul>
                             </ul>
                             <h4>Follow Us</h4>
+                                <SocialLinks href="https://www.facebook.com/PowerkidTH"><Icon src="https://cdn1.iconfinder.com/data/icons/logotypes/32/square-facebook-1024.png" /></SocialLinks>
+                                <SocialLinks href="https://www.instagram.com/powerkidth/"><Icon src="https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-instagram-new-square2-1024.png" /></SocialLinks>
+                                <SocialLinks href="https://www.tiktok.com/@powerkidth"><Icon src="https://cdn0.iconfinder.com/data/icons/logos-brands-7/512/TikTok_logo_app0-1024.png" /></SocialLinks>
+                                <SocialLinks href="https://line.me/R/ti/p/%40962qgkwm"><Icon src="https://cdn2.iconfinder.com/data/icons/social-media-applications/64/social_media_applications_5-line-1024.png" /></SocialLinks>
                             <p>PowerKidTH</p>
                         </FooterCol>
                         <FooterCol>
                             <h4>ปรึกษาการเรียน โทร</h4>
                             <p>063-2329154 คุณริตา</p>
                             <p>092-2410241 คุณภาคภูมิ</p>
+                            <h4>ติดต่อเรา</h4>
+                            <p>
+                            บริษัท เดอะแฟลชโซลูชั่น จำกัด
+                            เลขที่ 401/62 หมู่ 3
+                            ตำบลคูคต อำเภอลำลูกกา
+                            จังหวัดปทุมธานี 12130
+                            </p>
                         </FooterCol>
                     </Row>
                 </Container>
