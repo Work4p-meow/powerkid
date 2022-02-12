@@ -1,4 +1,5 @@
 import Navbar from "../component/Navbar"
+import Footer from "../component/Footer";
 import styled from "styled-components"
 import { FaBars } from 'react-icons/fa';
 import { NavLink as Link } from 'react-router-dom';
@@ -54,30 +55,31 @@ const Image = styled.img`
 
 
 function Cost() {
-    return (
-        <>
-            <Navbar />
-            <div >
-                <Text>
-                    <div >
+  return (
+    <>
+      <Navbar />
+      <div >
+        <Text>
+          <div >
 
-                        เริ่มต้นเรียนทักษะแห่งอนาคต
-                        <div>กับ PowerKid ตั้งแต่วันนี้</div>
-
-
+            เริ่มต้นเรียนทักษะแห่งอนาคต
+            <div>กับ PowerKid ตั้งแต่วันนี้</div>
 
 
-                        <div><Btn><BtnLink to='/cost'>เรียนสด (ออนไลน์)</BtnLink></Btn>
-                            <Btn><BtnLink to='/cost'>เรียนจากคลิปวีดีโอ</BtnLink></Btn></div>
-                        <Image src='assets/medium-shot-kid-taking-notes.jpg' />
-                        <Image src='assets/little-girls-doing-online-school-together-home.jpg' />
-                    </div>
 
-                </Text>
-            </div>
-        </>
-    )
-    //ราคา
+
+            <div><Btn><BtnLink to='/cost'>เรียนสด (ออนไลน์)</BtnLink></Btn>
+              <Btn><BtnLink to='/cost'>เรียนจากคลิปวีดีโอ</BtnLink></Btn></div>
+            <Image src='assets/medium-shot-kid-taking-notes.jpg' />
+            <Image src='assets/little-girls-doing-online-school-together-home.jpg' />
+          </div>
+
+        </Text>
+      </div>
+      <Footer />
+    </>
+  )
+  //ราคา
 }
 
 export default Cost

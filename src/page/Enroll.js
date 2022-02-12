@@ -1,4 +1,5 @@
 import Navbar from "../component/Navbar"
+import Footer from "../component/Footer";
 import styled from "styled-components"
 import { FaBars } from 'react-icons/fa';
 import { NavLink as Link } from 'react-router-dom';
@@ -53,21 +54,21 @@ const Image = styled.img`
 `;
 
 function Enroll() {
-    //สมัครเรียน
-    return (
-        <>
-            <Navbar />
-            <Text>
-                <div >
+  //สมัครเรียน
+  return (
+    <>
+      <Navbar />
+      <Text>
+        <div >
 
-                    สมัครเรียนกับ PowerKid
-                    <div>เริ่มง่ายๆ แค่ 3 ขั้นตอน</div>
-                    <Image src='assets/เลือกรูปแบบการเรียน.png'></Image>
-                </div>
-            </Text>
-
-        </>
-    )
+          สมัครเรียนกับ PowerKid
+          <div>เริ่มง่ายๆ แค่ 3 ขั้นตอน</div>
+          <Image src='assets/เลือกรูปแบบการเรียน.png'></Image>
+        </div>
+      </Text>
+      <Footer />
+    </>
+  )
 }
 
 export default Enroll
