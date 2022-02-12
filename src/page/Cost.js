@@ -1,9 +1,9 @@
 import Navbar from "../component/Navbar"
 import Footer from "../component/Footer";
 import styled from "styled-components"
-import { FaBars } from 'react-icons/fa';
+// import { FaBars } from 'react-icons/fa';
 import { NavLink as Link } from 'react-router-dom';
-import { logDOM } from "@testing-library/react";
+// import { logDOM } from "@testing-library/react";
 
 const Text = styled.div`
   font-family: 'Prompt', sans-serif;
@@ -52,6 +52,8 @@ const BtnLink = styled(Link)`
 const Image = styled.img`
   width: 15%;
 `;
+
+
 
 
 function Cost() {
