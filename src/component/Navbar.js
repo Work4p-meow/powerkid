@@ -1,7 +1,6 @@
 import styled from "styled-components"
 import { FaBars } from 'react-icons/fa';
 import { NavLink as Link } from 'react-router-dom';
-import { logDOM } from "@testing-library/react";
 
 export const Nav = styled.nav`
   position: relative;
