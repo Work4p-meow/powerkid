@@ -23,7 +23,7 @@ const Text = styled.div`
 
 
 const Image = styled.img`
-  width: 50%;
+  width: 75%;
 `;
 
 function Enroll() {
