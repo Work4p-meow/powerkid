@@ -1,12 +1,11 @@
 import Navbar from "../component/Navbar"
 import Footer from "../component/Footer";
 import styled from "styled-components"
-// import { FaBars } from 'react-icons/fa';
-// import { NavLink as Link } from 'react-router-dom';
-// import { logDOM } from "@testing-library/react";
+import "./Enroll.css"
 
 const Text = styled.div`
   font-family: 'Prompt', sans-serif;
+  font-size:46px;
   display: flex;
   width: 120%;
   /* align-items: center; */
@@ -23,6 +22,7 @@ const Text = styled.div`
 
 
 const Image = styled.img`
+  
   width: 75%;
 `;
 
@@ -32,12 +32,18 @@ function Enroll() {
     <>
       <Navbar />
       <Text>
-        <div >
+        <div className="container"  >
+          <div class="padding">
 
-          สมัครเรียนกับ PowerKid
-          <div>เริ่มง่ายๆ แค่ 3 ขั้นตอน</div>
-          <Image src='assets/เลือกรูปแบบการเรียน.png'></Image>
+            <div className='center'>สมัครเรียนกับ PowerKid</div>
+
+            <div className='center'>เริ่มง่ายๆ แค่ 3 ขั้นตอน</div>
+          </div>
+          <Image src='assets/เลือกรูปแบบการเรียน.png' className='center'></Image>
+          <div className='center'><iframe src='https://forms.gle/m6bdfCY275fPKRrNA'></iframe></div>
+
         </div>
+
       </Text>
       <Footer />
     </>

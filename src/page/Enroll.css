@@ -1,0 +1,34 @@
+.container {
+    max-width: 2100px;
+    margin: center;
+}
+.content-con {
+    display: flex;
+    justify-content: space-between;
+}
+.content-con:first-child, .content-con:last-child {
+    padding: 5rem 0;
+}
+.content-l img {
+    width: 100%;
+    border-radius: 10px;
+}
+.content-r {
+    padding: 2rem;
+    text-align: left;
+}
+div.center {
+    text-align: center;
+}
+.padding {
+    padding: 2.5em 0em 0.5em;
+}
+
+@media screen and (max-width: 480px) {
+    .content-con {
+        flex-direction: column;
+    }
+    .content-con:nth-child(2) .content-r {
+        order: 1;
+    }
+}

@@ -50,7 +50,7 @@ const BtnLink = styled(Link)`
   }
 `;
 const Image = styled.img`
-  width: 15%;
+  width: 50%;
 `;
 
 
@@ -62,16 +62,16 @@ function Cost() {
       <Navbar />
       <div >
         <Text>
-          <div >
+          <div className='container' >
 
-            เริ่มต้นเรียนทักษะแห่งอนาคต
+            <div>เริ่มต้นเรียนทักษะแห่งอนาคต</div>
             <div>กับ PowerKid ตั้งแต่วันนี้</div>
 
 
 
 
-            <div><Btn><BtnLink to='/cost'>เรียนสด (ออนไลน์)</BtnLink></Btn>
-              <Btn><BtnLink to='/cost'>เรียนจากคลิปวีดีโอ</BtnLink></Btn></div>
+            <Btn><BtnLink to='/cost'>เรียนสด (ออนไลน์)</BtnLink></Btn>
+            <Btn><BtnLink to='/cost'>เรียนจากคลิปวีดีโอ</BtnLink></Btn>
             <Image src='assets/medium-shot-kid-taking-notes.jpg' />
             <Image src='assets/little-girls-doing-online-school-together-home.jpg' />
           </div>
