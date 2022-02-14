@@ -1,4 +1,5 @@
 import Navbar from "../component/Navbar"
+import Footer from "../component/Footer";
 import styled from "styled-components"
 // import { FaBars } from 'react-icons/fa';
 import { NavLink as Link } from 'react-router-dom';
@@ -6,23 +7,7 @@ import { NavLink as Link } from 'react-router-dom';
 
 const Text = styled.div`
   font-family: 'Prompt', sans-serif;
-  font-size:46px;
-  display: flex;
-  width: 120%;
-  /* align-items: center; */
-  margin-right: -24px;
-  /* Second Nav */
-  /* margin-right: 24px; */
-  /* Third Nav */
-  /* width: 100vw;
-  white-space: nowrap; */
-  @media screen and (max-width: 768px) {
-    display: none;
-  }
-  `;
-const Textsmall = styled.div`
-  font-family: 'Prompt', sans-serif;
-  font-size:
+  font-size: 46px;
   display: flex;
   width: 120%;
   /* align-items: center; */
@@ -66,7 +51,7 @@ const BtnLink = styled(Link)`
   }
 `;
 const Image = styled.img`
-  width: 35%;
+  width: 50%;
 `;
 
 
@@ -79,7 +64,7 @@ function Cost() {
       <div >
         <Text>
           <div className='container' >
-            <div className='padding'>
+            <div className="padding">
               <div className='center'>เริ่มต้นเรียนทักษะแห่งอนาคต</div>
               <div className='center'>กับ PowerKid ตั้งแต่วันนี้</div>
             </div>
@@ -87,15 +72,16 @@ function Cost() {
 
 
 
-            <Textsmall>  <Btn><BtnLink to='/cost'>เรียนสด (ออนไลน์)</BtnLink></Btn>
-              <Btn><BtnLink to='/cost'>เรียนจากคลิปวีดีโอ</BtnLink></Btn>
-              <Image src='assets/medium-shot-kid-taking-notes.jpg' />
-              <Image src='assets/little-girls-doing-online-school-together-home.jpg' /></Textsmall>
 
+            <Btn><BtnLink to='/cost'>เรียนสด (ออนไลน์)</BtnLink></Btn>
+            <Btn><BtnLink to='/cost'>เรียนจากคลิปวีดีโอ</BtnLink></Btn>
+            <Image src='assets/medium-shot-kid-taking-notes.jpg' />
+            <Image src='assets/little-girls-doing-online-school-together-home.jpg' />
           </div>
 
         </Text>
       </div>
+
     </>
   )
   //ราคา
