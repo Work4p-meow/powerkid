@@ -5,7 +5,7 @@ function Home(){
         <>
             <NavbarHome />
         Home
-            <Footer />
+
         </>
     )
 }

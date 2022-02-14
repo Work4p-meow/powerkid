@@ -118,6 +118,9 @@ const Title = styled.p`
     font-family: 'Bai Jamjuree', sans-serif;
     color: #FFF;
 `
+const Address = styled.p`
+    font-family: 'Bai Jamjuree', sans-serif;
+`
 const Icon = styled.img`
     width: 100%;
 `
@@ -165,12 +168,12 @@ const Footer = () => {
                             <p>063-2329154 คุณริตา</p>
                             <p>092-2410241 คุณภาคภูมิ</p>
                             <h4>ติดต่อเรา</h4>
-                            <p>
+                            <Address>
                             บริษัท เดอะแฟลชโซลูชั่น จำกัด
                             เลขที่ 401/62 หมู่ 3
                             ตำบลคูคต อำเภอลำลูกกา
                             จังหวัดปทุมธานี 12130
-                            </p>
+                            </Address>
                         </FooterCol>
                     </Row>
                 </Container>

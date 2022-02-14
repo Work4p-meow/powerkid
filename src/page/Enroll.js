@@ -46,7 +46,7 @@ function Enroll() {
         </div>
 
       </Text>
-      <Footer />
+
     </>
   )
 }

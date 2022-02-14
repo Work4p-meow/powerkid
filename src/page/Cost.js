@@ -1,5 +1,4 @@
 import Navbar from "../component/Navbar"
-import Footer from "../component/Footer";
 import styled from "styled-components"
 // import { FaBars } from 'react-icons/fa';
 import { NavLink as Link } from 'react-router-dom';
@@ -97,7 +96,6 @@ function Cost() {
 
         </Text>
       </div>
-      <Footer />
     </>
   )
   //ราคา

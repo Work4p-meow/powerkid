@@ -1,0 +1,26 @@
+:root {
+    --primary: #E85137;
+  }
+  
+  .btn {
+    font-family: 'Prompt', sans-serif;
+    padding: 8px 20px;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    background-color: var(--primary);
+    margin-top: 20px;
+  }
+  
+  .btn:hover {
+    padding: 6px 18px;
+    transition: all 0.3s ease-out;
+    background-color: transparent;
+    color: #fff;
+    border-radius: 30px;
+    border: 2px solid var(--primary);
+    transition: all 0.3s ease-out;
+  }
