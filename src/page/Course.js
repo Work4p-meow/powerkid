@@ -1,11 +1,11 @@
 import Navbar from "../component/Navbar"
-import Footer from "../component/Footer"
+
 function Course() {
     //หลักสูตร
-    return(
+    return (
         <>
             <Navbar />
-        course
+            course
         </>
     )
 }
