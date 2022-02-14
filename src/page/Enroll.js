@@ -40,7 +40,8 @@ function Enroll() {
             <div className='center'>เริ่มง่ายๆ แค่ 3 ขั้นตอน</div>
           </div>
           <Image src='assets/เลือกรูปแบบการเรียน.png' className='center'></Image>
-          <div className='center'><iframe src='https://forms.gle/m6bdfCY275fPKRrNA'></iframe></div>
+          <div className='center'><iframe src='https://forms.gle/m6bdfCY275fPKRrNA' width="800"
+            height="720"></iframe></div>
 
         </div>
 
