@@ -6,7 +6,6 @@ function Course() {
         <>
             <Navbar />
         course
-        <Footer />
         </>
     )
 }

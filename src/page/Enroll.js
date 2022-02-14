@@ -39,7 +39,7 @@ function Enroll() {
           <Image src='assets/เลือกรูปแบบการเรียน.png'></Image>
         </div>
       </Text>
-      <Footer />
+
     </>
   )
 }
