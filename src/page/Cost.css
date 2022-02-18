@@ -1,5 +1,5 @@
 .container {
-    max-width:1200px;
+    max-width:1000px;
     margin: 0 auto;
     text-align: center;
 }
@@ -17,6 +17,12 @@
 .content-r {
     padding: 2rem;
     text-align: left;
+}
+.padding {
+    padding: 2.5em 0em 0.5em;
+}
+.center {
+    text-align: center;
 }
 
 @media screen and (max-width: 480px) {

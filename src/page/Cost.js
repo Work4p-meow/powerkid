@@ -1,4 +1,5 @@
 import Navbar from "../component/Navbar"
+import Footer from "../component/Footer";
 import styled from "styled-components"
 // import { FaBars } from 'react-icons/fa';
 import { NavLink as Link } from 'react-router-dom';
@@ -6,6 +7,7 @@ import { NavLink as Link } from 'react-router-dom';
 
 const Text = styled.div`
   font-family: 'Prompt', sans-serif;
+  font-size: 46px;
   display: flex;
   width: 120%;
   /* align-items: center; */
@@ -62,9 +64,11 @@ function Cost() {
       <div >
         <Text>
           <div className='container' >
+            <div className="padding">
+              <div className='center'>เริ่มต้นเรียนทักษะแห่งอนาคต</div>
+              <div className='center'>กับ PowerKid ตั้งแต่วันนี้</div>
+            </div>
 
-            <div>เริ่มต้นเรียนทักษะแห่งอนาคต</div>
-            <div>กับ PowerKid ตั้งแต่วันนี้</div>
 
 
 
@@ -77,6 +81,7 @@ function Cost() {
 
         </Text>
       </div>
+
     </>
   )
   //ราคา
