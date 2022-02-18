@@ -1,0 +1,16 @@
+.homepage-bgimage {
+    background: url("https://scontent.fcnx4-1.fna.fbcdn.net/v/t1.15752-9/p1080x2048/254115381_555323125865013_4953099210210446727_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=ae9488&_nc_eui2=AeGLQC18kEh1fMWhiXVY5G9XauL9JaYBSvVq4v0lpgFK9UHk5qFERbxtl6ch_iQca9PN9taVsgB-eL3U5mxl7NBB&_nc_ohc=F2nrQLUI7JkAX-0c2Ms&_nc_ht=scontent.fcnx4-1.fna&oh=03_AVLOLFzOhLOT26aYybxT91fuu6FLuFyNyCwopxbFwxZqQQ&oe=6233FAF6");
+    height: 100vh;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover ;
+    right: 100vh;
+
+  }
+  .container {
+    max-width: 1800px;
+    margin: center;
+}
+.center {
+    text-align: center;
+}
