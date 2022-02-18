@@ -1,5 +1,5 @@
 .navbar {
-  position: relative;
+  position: absolute;
   height: 80px;
   display: flex;
   flex-direction: row;
@@ -9,6 +9,7 @@
   margin-left: 50px;
   font-family: 'Prompt', sans-serif;
   font-size: medium;
+  z-index: 5;
 
 }
 

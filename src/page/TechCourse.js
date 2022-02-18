@@ -4,6 +4,7 @@ function TechCourse() {
     return(
         <>
         <Navbar />
+        Hello World
         </>
     )
 }

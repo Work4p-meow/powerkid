@@ -4,6 +4,7 @@ function EnterpCourse() {
     return(
         <>
         <Navbar />
+        Hello World
         </>
     )
 }

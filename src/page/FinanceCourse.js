@@ -4,6 +4,7 @@ function FinanceCourse() {
     return(
         <>
         <Navbar />
+        Hello World
         </>
     )
 }
