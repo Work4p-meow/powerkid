@@ -2,11 +2,9 @@
   position: absolute;
   height: 80px;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+
   align-items: center;
-  font-size: 1.2rem;
-  margin-left: 50px;
+  margin-left: 10%;
   font-family: 'Prompt', sans-serif;
   font-size: medium;
   z-index: 5;
@@ -15,18 +13,13 @@
 
 
 
-.fa-firstdraft {
-  margin-left: 0.5rem;
-  font-size: 1.6rem;
-}
-
 .nav-menu {
   display: flex;
   list-style: none;
   text-align: center;
-  width: 60vw;
+  width: 150vh;
   justify-content: end;
-  margin-right: 2rem;
+  /* margin-right: 2rem; */
 }
 
 .nav-item {

@@ -9,7 +9,6 @@ const Container = styled.div`
     margin: 0 auto;
     justify-content: center;
 `
-
 const BannerBg = styled.div`
     height: 760px;
     background-size: cover;
@@ -25,11 +24,8 @@ const BannerCon = styled.div`
 const MiddleCon = styled.div`
     margin-bottom:10% ;
 `
-const GreyMiddleCon = styled.div`
+const GreyBg = styled.div`
     background-color: #E8E8E8;
-    margin-bottom: 10%;
-    margin: 0 auto;
-    justify-content: center;
 `
 const BannerText = styled.div`
     margin-top: 100px;
@@ -51,6 +47,7 @@ const MiddleText = styled.div`
         color: #2B39AF;
         top: 10vh;
     }
+    margin-top: 10vh;
     margin-left:10%;
     margin-right: 10%;
     justify-content: center;
@@ -92,8 +89,8 @@ const Row = styled.div`
 const VideoBg = styled.video`
     background: rgba(0, 0, 0, 0.5);
     position: absolute;
-    width: 100%;
-    height: 100%;
+    /* width: 100%; */
+    height: inherit;
     background-size: cover;
     overflow: hidden;
     @media screen and (max-width: 480px) {
@@ -121,8 +118,14 @@ const ContentCon = styled.section`
 `
 
 const ContentL = styled.div`
-padding: 5rem ;
+padding: 2rem ;
 align-items: center;
+justify-content: center;
+text-align: center;
+width: 85%;
+    h1, h2{
+        font-family: 'Prompt';
+    }
 img{
     width: 90%;
     border-radius: 10px;
@@ -132,11 +135,16 @@ img{
 const ContentR = styled.div`
     padding: 2rem ;
     text-align: center;
+    justify-content: center;
     width: 85%;
     font-family: 'bai jamjuree';
     h1, h2{
         font-family: 'Prompt';
     }
+    img{
+    width: 90%;
+    border-radius: 10px;
+}
 `
 const Power = styled.h2`
     color: #2B39AF;
@@ -150,7 +158,7 @@ const Discript = styled.div`
     font-family: 'Bai Jamjuree';
 `
 const TrialBtn = styled.a`
-font-family: 'Prompt';
+    font-family: 'Prompt';
     background: #E85137;
     display: inline-block;
     padding: .5rem 1rem;
@@ -170,31 +178,47 @@ font-family: 'Prompt';
 `
 const ImgRow = styled.div`
     display: flex;
+    align-items: center;
+    justify-content: center;
     img{
-        height: 50%;
+        max-width: 15%;
+        margin: 3vh;
     }
-    width: inherit;
+    @media screen and (max-width: 480px) {
+        flex-direction: column;
+        img{
+            max-width: 50%;
+        }
+    }
 `
-// .content-con:first-child, .content-con:last-child {
-//     padding: 5rem 0;
-// }
-// .content-l img {
-//     width: 100%;
-//     border-radius: 10px;
-// }
-// .content-r {
-//     padding: 2rem;
-//     text-align: left;
-// }
 
-// @media screen and (max-width: 480px) {
-//     .content-con {
-//         flex-direction: column;
-//     }
-//     .content-con:nth-child(2) .content-r {
-//         order: 1;
-//     }
-// }
+const CourseCardRow = styled.div`
+    display: flex;
+    align-items: center;
+    img{
+        width: 100%;
+        border-radius: 10px;
+        cursor: pointer;
+        &:hover {
+            border: 2px solid #fff;
+        }
+    }
+    @media screen and (max-width: 480px) {
+        flex-direction: column;
+        img{
+            max-width: 100%;
+            border-radius: 10px;
+        cursor: pointer;
+        &:hover {
+            border: 2px solid #fff;
+        }
+        }
+    }
+`
+
+const CourseCard = styled.a`
+    margin: 1vh;
+`
 
 let bannerData = {
     title1: "ติดอาวุธให้ลูกคุณพร้อมตั้งเเต่วันนี้",
@@ -202,7 +226,7 @@ let bannerData = {
 }
 function Home(){
     return(
-        <>
+        <div>
         <NavbarHome />
             <Header>
                 <BannerBg>
@@ -237,29 +261,53 @@ function Home(){
                                     </Discript>
                     </MiddleText>
                 </MiddleCon>
-                </Container>
-                <GreyMiddleCon>
+            </Container>
+                <GreyBg>
                     <Container>
-                        <MiddleText>
-                            <h1>เตรียมลูกของคุณให้พร้อมตั้งเเต่วันนี้เพราะการเรียนรู้เริ่มต้นได้เสมอ</h1>
-                        </MiddleText>
-                    <ContentCon>
-                        <ContentR>
-                        เด็กไทยยังขาดทักษะเเห่งอนาคตที่สามารถนําไปใช้
-ได้จริง เพราะเราถูกสอนเสมอมาว่าทักษะเหล่านั้น
-เป็นเรื่องไกลตัว วันนี้โลกของเรามีข้อมูลที่เคลื่อนที่เเละ
-ถูกเข้าถึงอย่างรวดเร็วเเละง่ายดาย วิธีรับมือที่ดีที่สุดคือ
-การเตรียมพร้อมบุตรหลานของท่านให้พร้อมสําหรับ 
-โลกที่ เทคโนโลยี ,การเงินและการลงทุน
-รวมถึงการเป็นผู้ประกอบการ คือสิ่งสําคัญ
-                        </ContentR>
-                        <ContentL>
-                            <img src="/assets/งานออกแบบที่ไม่มีชื่อ (8).png" alt=""/>
-                        </ContentL>
-                    </ContentCon>
+                        <ContentCon>
+                            <ContentR>
+                                <Row>
+                                    <Power>เตรียมลูกของคุณให้พร้อมตั้งเเต่วันนี้เพราะการเรียนรู้เริ่มต้นได้เสมอ</Power>
+                                </Row>
+                            เด็กไทยยังขาดทักษะเเห่งอนาคตที่สามารถนําไปใช้
+    ได้จริง เพราะเราถูกสอนเสมอมาว่าทักษะเหล่านั้น
+    เป็นเรื่องไกลตัว วันนี้โลกของเรามีข้อมูลที่เคลื่อนที่เเละ
+    ถูกเข้าถึงอย่างรวดเร็วเเละง่ายดาย วิธีรับมือที่ดีที่สุดคือ
+    การเตรียมพร้อมบุตรหลานของท่านให้พร้อมสําหรับ 
+    โลกที่ เทคโนโลยี ,การเงินและการลงทุน
+    รวมถึงการเป็นผู้ประกอบการ คือสิ่งสําคัญ
+                            </ContentR>
+                            <ContentL>
+                                <img src="/assets/งานออกแบบที่ไม่มีชื่อ (8).png" alt=""/>
+                            </ContentL>
+                        </ContentCon>
                     </Container>
-                </GreyMiddleCon>
+                </GreyBg>
                 <Container>
+                <MiddleCon>
+                    <MiddleText>
+                                <Row>
+                                    <h2>หลักสูตรของเรา<br />Our course</h2>
+                                </Row>
+                                <CourseCardRow>
+                                    <CourseCard href="/TechCourse">
+                                    <img src="/assets/ชื่อคอร์ส ราคา/1.png" />
+                                    </CourseCard>
+                                    <CourseCard href="/TechCourse">
+                                    <img src="/assets/ชื่อคอร์ส ราคา/2.png" />
+                                    </CourseCard>
+                                    <CourseCard href="/TechCourse">
+                                    <img src="/assets/ชื่อคอร์ส ราคา/3.png" />
+                                    </CourseCard>
+                                    {/* <CourseCard href="/FinanceCourse">
+                                        <img src="/assets/ชื่อคอร์ส ราคา/2.png" />
+                                    </CourseCard>
+                                    <CourseCard href="/EnterpCourse">
+                                        <img src="/assets/ชื่อคอร์ส ราคา/3.png" />
+                                    </CourseCard> */}
+                                </CourseCardRow>
+                    </MiddleText>
+                </MiddleCon>
                 <MiddleCon>
                     <MiddleText>
                                 <Row>
@@ -328,15 +376,13 @@ function Home(){
                         <img src="/assets/ติดตามเราเพื่อรับเเนวทางการสอนทักษะเเห่งอนาคต ฟรี! (2).png" className="width:30%" alt="" />
                     </ContentL>
                     <ContentR>
-                            <Power>เรียนได้หลากหลายรูป</Power><Kid>ทั้งเรียนสด(ออนไลน์) และเรียนผ่านคลิปวิดีโอ</Kid>
+                            <Power>เรียนได้หลากหลายรูปแบบ</Power><Kid>ทั้งเรียนสด(ออนไลน์) และเรียนผ่านคลิปวิดีโอ</Kid>
                               <p>เพราะการเรียนรู้จากบุคคลที่เชี่ยวชาญในด้านนั้นๆ นอกจากจะได้ความรู้ที่ถูกต้องเเละครบถ้วนเเล้วเด็ก ๆ ยังได้รับแรงบันดาลใจจากบุคคลเหล่านี้อีกด้วย </p>
                     </ContentR>
                 </ContentCon>
-             </Container>
-                <MiddleText>
+        <MiddleText>
                     <TrialBtn href="/Trial">ทดลองเรียนฟรี</TrialBtn>
                 </MiddleText>
-        <Container>
         <ContentCon>
                     <ContentL>
                         <img src="/assets/5224588.jpg" alt="" />
@@ -361,16 +407,12 @@ function Home(){
                                     <img src="/assets/โลโก้หน่วยงาน/StartupThailand logoกลาง.png" />
                                     <img src="/assets/โลโก้หน่วยงาน/sysi.jpeg" />
                                     <img src="/assets/โลโก้หน่วยงาน/สสส.png" />
-                                
                                 </ImgRow>
                     </MiddleText>
                 </MiddleCon>
         </Container>
-            
-            
-        Home
 
-        </>
+        </div>
     )
 }
 
