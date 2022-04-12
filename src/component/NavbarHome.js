@@ -38,7 +38,7 @@ function NavbarHome() {
       <nav className='navbar'>
         <div>
           <Link to='/' onClick={closeMobileMenu}>
-            <Logo src='assets/Logo PowerKid.png'></Logo>
+            <Logo src='/assets/Logo Powerkid.png'></Logo>
           </Link>
         </div>
         <div className='menu-icon' onClick={handleClick}>

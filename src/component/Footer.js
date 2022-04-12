@@ -132,7 +132,7 @@ const Footer = () => {
                     <Row>
                         <FooterCol>
                             <ul>
-                                <WhiteLogo src="/assets/PowerKid Logo White_cut.png" />
+                                <WhiteLogo src="/assets/PowerKid Logo White.png" />
                             </ul>
                             <h4>Empower the Future, Empower your Kid</h4>
                                 <Title>
